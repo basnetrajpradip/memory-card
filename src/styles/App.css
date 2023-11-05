@@ -1,0 +1,61 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-hero {
+  font-family: poppins;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--text);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--text);
+  color: transparent;
+}
+
+.logo-info {
+  font-family: poppins;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-style: italic;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  font-family: poppins;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.game-container {
+  margin: 0 4rem 0 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 4.5rem;
+}
+
+.score-board {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  color: var(--text);
+  font-family: poppins;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+}

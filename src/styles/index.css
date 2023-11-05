@@ -1,0 +1,29 @@
+@font-face {
+  font-family: poppins;
+  src: url(../assets/fonts/poppins.ttf);
+}
+
+:root {
+  --primary: #d5522a;
+  --secondary: #111504;
+  --accent: #c04a26;
+  --background: #081f26;
+  --text: #e5f5fa;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--background);
+  font-size: 16px;
+  font-family: bodyFont;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+}
